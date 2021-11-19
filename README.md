@@ -23,5 +23,4 @@ Open http://localhost:3000 to view it in the browser.
 * [ESLint](https://eslint.org)
 * [EditorConfig](https://editorconfig.org)
 * [Prettier](https://prettier.io/)
-* [Estilo do Chakra UI](https://chakra-ui.com)
 * [React Icons](https://react-icons.github.io/react-icons)
