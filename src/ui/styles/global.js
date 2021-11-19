@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    background: ${theme.colors.darkBlack};
+    background: linear-gradient(60deg, #252332, #1B1925);
     font-family: ${theme.font.family};
     overflow-x: hidden;
     position: relative;
