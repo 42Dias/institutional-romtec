@@ -27,6 +27,8 @@ export const Nav = styled.nav`
 `
 
 export const ContentHeader = styled.div`
+  margin: 0 0 0 80px;
+
   h1 {
     color: ${theme.colors.white};
     font-weight: ${theme.font.weigths.bold};
@@ -125,12 +127,11 @@ export const ContainerPhone = styled.div`
   margin-top: 40px;
 
   img {
-    max-width: 450px;
     margin-top: -50px;
   }
 
   h1 {
-    margin: 0 0 0 50px;
+    margin: 0 0 0 120px;
     max-width: 500px;
   }
 `
@@ -138,7 +139,7 @@ export const ContainerPhone = styled.div`
 export const ContainerMain = styled.div`
   text-align: left;
   float: right;
-  margin: 0 70px 0 0;
+  margin: 170px 100px 0 0;
 
   h1 {
     color: ${theme.colors.yellow};
@@ -171,13 +172,15 @@ export const ContainerMain = styled.div`
 export const Footer = styled.footer`
   width: 100%;
   background: linear-gradient(60deg, #1b1925, #252332);
-  height: 300px;
+  height: 100%;
+  margin-top: 100px;
 
   img {
     margin: 50px;
   }
 
   span {
+    font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
