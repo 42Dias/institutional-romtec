@@ -11,11 +11,18 @@ export const Nav = styled.nav`
 
   a {
     color: ${theme.colors.white};
-    margin: 15px;
+    margin: 100rem 0 100px 15px !important;
 
     :hover {
       color: ${theme.colors.yellow};
     }
+  }
+
+  img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin: 0 0 0 20px;
   }
 `
 
@@ -48,10 +55,10 @@ export const ContentHeader = styled.div`
   }
 
   img {
-    width: 400px;
-    height: 600px;
+    width: 440px;
+    height: 630px;
     float: right;
-    margin-top: -33rem;
+    margin-top: -38rem;
   }
 `
 

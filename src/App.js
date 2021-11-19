@@ -1,6 +1,7 @@
 import { GlobalStyle } from './ui'
 import header from './assets/header.png'
 import * as S from './App.styled'
+import logo from './assets/logo.svg'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <GlobalStyle />
       <header>
         <S.Nav>
+          <img src={logo} alt='logo' />
           <ul>
             <li>
               <a href=''>lorem</a>
