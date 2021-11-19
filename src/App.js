@@ -1,5 +1,4 @@
 import { GlobalStyle } from './ui'
-import logo from './assets/logo.svg'
 import header from './assets/header.png'
 import * as S from './App.styled'
 
@@ -8,26 +7,24 @@ function App() {
     <>
       <GlobalStyle />
       <header>
-        <img src={logo} alt='logo' />
-        <nav>
+        <S.Nav>
           <ul>
-            <S.List>
+            <li>
               <a href=''>lorem</a>
-            </S.List>
-            <S.List>
+            </li>
+            <li>
               <a href=''>lorem</a>
-            </S.List>
-            <S.List>
+            </li>
+            <li>
               <a href=''>lorem</a>
-            </S.List>
-            <S.List>
+            </li>
+            <li>
               <a href=''>lorem</a>
-            </S.List>
+            </li>
           </ul>
-        </nav>
+        </S.Nav>
       </header>
-      <div>
-        <img src={header} alt='logo' />
+      <S.ContentHeader>
         <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
         <p>
           Morbi vitae lorem nisl. Sed lobortis non sapien sit amet consectetur.
@@ -35,8 +32,32 @@ function App() {
           quam. Ut non pretium leo.
         </p>
         <a href='#'>Saiba mais</a>
-      </div>
-      <footer>Lorem</footer>
+        <img src={header} alt='header' />
+      </S.ContentHeader>
+      <S.Division>
+        <S.ContainerDivision>
+          <S.ContentDivision>
+            <span>01</span>
+            <p>
+              Morbi vitae lorem nisl. Sed lobortis non sapien sit amet
+              consectetur.
+            </p>
+
+            <span>02</span>
+            <p>
+              Morbi vitae lorem nisl. Sed lobortis non sapien sit amet
+              consectetur.
+            </p>
+
+            <span>03</span>
+            <p>
+              Morbi vitae lorem nisl. Sed lobortis non sapien sit amet
+              consectetur.
+            </p>
+          </S.ContentDivision>
+        </S.ContainerDivision>
+      </S.Division>
+      <div></div>
     </>
   )
 }
