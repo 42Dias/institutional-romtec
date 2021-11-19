@@ -94,3 +94,74 @@ export const ContentDivision = styled.div`
     color: ${theme.colors.darkBlack};
   }
 `
+
+export const ContainerSpecifications = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+export const ContentSpecifications = styled.div`
+  margin: 200px 0 150px 80px;
+
+  strong {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+    max-width: 200px;
+    text-align: center;
+  }
+
+  svg {
+    color: ${theme.colors.yellow};
+    margin: 0 20px 0 -49px;
+  }
+`
+
+export const ContainerPhone = styled.div`
+  img {
+    max-width: 450px;
+    margin-top: -50px;
+  }
+
+  h1 {
+    margin: 0 0 0 50px;
+    max-width: 500px;
+  }
+`
+
+export const ContainerMain = styled.div`
+  text-align: left;
+  float: right;
+  margin: 0 70px 0 0;
+
+  h1 {
+    color: ${theme.colors.yellow};
+    font-weight: ${theme.font.weigths.bold};
+    font-size: 40px;
+    margin: 50px 0 10px 50px;
+    max-width: 500px;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 0 0 30px 50px;
+    max-width: 500px;
+  }
+
+  a {
+    padding: 10px 45px 10px 45px;
+    background-color: ${theme.colors.yellow};
+    border-radius: 5px;
+    color: ${theme.colors.white};
+    transition: 300ms;
+    margin: 0 0 0 50px;
+
+    :hover {
+      opacity: 85%;
+    }
+  }
+`
