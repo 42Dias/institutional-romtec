@@ -102,6 +102,10 @@ function App() {
           <a href='#'>Saiba mais</a>
         </S.ContainerMain>
       </S.ContainerPhone>
+      <S.Footer>
+        <img src={logo} alt='logo' />
+        <span>Copyright 2017. Todos os direitos reservados.</span>
+      </S.Footer>
     </>
   )
 }

@@ -122,6 +122,8 @@ export const ContentSpecifications = styled.div`
 `
 
 export const ContainerPhone = styled.div`
+  margin-top: 40px;
+
   img {
     max-width: 450px;
     margin-top: -50px;
@@ -163,5 +165,21 @@ export const ContainerMain = styled.div`
     :hover {
       opacity: 85%;
     }
+  }
+`
+
+export const Footer = styled.footer`
+  width: 100%;
+  background: linear-gradient(60deg, #1b1925, #252332);
+  height: 300px;
+
+  img {
+    margin: 50px;
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `
