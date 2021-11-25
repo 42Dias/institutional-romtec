@@ -1,17 +1,23 @@
 import styled from 'styled-components/macro'
+import bannerhome from './assets/bannerhome.png'
 import { theme } from './ui'
+
+export const Container = styled.div`
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 10px;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+`
 
 export const Nav = styled.nav`
   text-align: center;
-  margin-top: 40px;
-
-  li {
-    display: inline;
-  }
 
   a {
     color: ${theme.colors.white};
-    margin: 100rem 0 100px 15px !important;
 
     :hover {
       color: ${theme.colors.yellow};
@@ -22,149 +28,229 @@ export const Nav = styled.nav`
     display: flex;
     width: 100px;
     height: 100px;
-    margin: 0 0 0 20px;
+  }
+`
+
+export const BtnLogin = styled.div`
+  a {
+    width: 180px;
+    height: 50px;
+
+    background: #fece51;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: ${theme.colors.darkBlack};
+    font-weight: bold;
   }
 `
 
 export const ContentHeader = styled.div`
-  margin: 0 0 0 80px;
+  background: url(${bannerhome});
+  background-size: 100%;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  width: 100%;
+  height: 500px;
+  position: relative;
 
+  @media (max-width: 768px) {
+    height: 700px;
+    width: 100%;
+    background-size: 100%;
+    object-fit: cover;
+  }
+`
+
+export const ContentHome = styled.div`
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 300px);
+  transform: translate(-50%, -50%);
   h1 {
     color: ${theme.colors.white};
     font-weight: ${theme.font.weigths.bold};
     font-size: 40px;
-    margin: 50px 0 10px 50px;
     max-width: 500px;
   }
 
   p {
     font-size: 14px;
-    margin: 0 0 30px 50px;
+    word-wrap: break-word;
+    display: inline-block;
+    word-break: break-all;
     max-width: 500px;
+    padding: 10px 0;
   }
 
   a {
-    padding: 10px 45px 10px 45px;
-    margin: 50px;
     background-color: ${theme.colors.yellow};
     border-radius: 5px;
     color: ${theme.colors.white};
     transition: 300ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
 
+    background: #fece51;
+    border-radius: 5px;
     :hover {
       opacity: 85%;
     }
   }
 
-  img {
-    width: 440px;
-    height: 630px;
-    float: right;
-    margin-top: -38rem;
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    padding: 0 10px;
+    transform: translate(0, 0);
+
+    h1 {
+      font-size: 28px;
+    }
   }
 `
 
-export const Division = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(60deg, #1b1925, #252332);
-  width: 100%;
-  height: 204px;
-  margin-top: 80px;
-`
-
 export const ContainerDivision = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 1100px;
-  height: 204px;
   background: ${theme.colors.yellow};
+  margin: 40px 0;
   border-radius: 5px;
-  margin-top: 50px;
+  padding: 50px;
 `
 
 export const ContentDivision = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-
   span {
-    font-size: 64px;
-    margin: 40px;
     color: ${theme.colors.darkBlack};
+    font-size: 64px;
+  }
+
+  p {
+    margin-left: 20px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 `
 
 export const ContainerSpecifications = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 export const ContentSpecifications = styled.div`
-  margin: 200px 0 150px 80px;
-
-  strong {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  p {
-    font-size: 16px;
-    max-width: 200px;
-    text-align: center;
-  }
+  margin: 50px auto;
+  display: flex;
 
   svg {
-    color: ${theme.colors.yellow};
-    margin: 0 20px 0 -49px;
+    color: #fece51;
+  }
+  div {
+    margin-left: 20px;
   }
 `
 
 export const ContainerPhone = styled.div`
-  margin-top: 40px;
-
-  img {
-    margin-top: -50px;
-  }
+  padding: 80px 0;
 
   h1 {
-    margin: 0 0 0 120px;
-    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 845px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+    }
   }
 `
 
 export const ContainerMain = styled.div`
-  text-align: left;
-  float: right;
-  margin: 170px 100px 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
-  h1 {
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+
+    &:last-child {
+      flex-direction: column-reverse;
+    }
+  }
+
+  img {
+    width: 400px;
+    height: 500px;
+    object-fit: contain;
+  }
+
+  img:last-child {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: 90px;
+  }
+
+  .contentMain {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  h2 {
     color: ${theme.colors.yellow};
-    font-weight: ${theme.font.weigths.bold};
-    font-size: 40px;
-    margin: 50px 0 10px 50px;
-    max-width: 500px;
+    font-size: 38px;
   }
 
   p {
-    font-size: 14px;
-    margin: 0 0 30px 50px;
-    max-width: 500px;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 20px 0;
   }
 
   a {
-    padding: 10px 45px 10px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 44px;
     background-color: ${theme.colors.yellow};
+    color: ${theme.colors.darkBlack};
     border-radius: 5px;
-    color: ${theme.colors.white};
-    transition: 300ms;
-    margin: 0 0 0 50px;
+  }
 
-    :hover {
-      opacity: 85%;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    img {
+      width: 100%;
+    }
+
+    img:last-child {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      margin-left: 0;
+    }
+
+    h2 {
+      font-size: 22px;
     }
   }
 `
